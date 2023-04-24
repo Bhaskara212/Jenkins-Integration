@@ -17,7 +17,8 @@ public class App
 {
     public static void main( String[] args ) throws InterruptedException, IOException
     {
-    	System.setProperty("webdriver.chrome.driver","C:\\chromedriver\\chromedriver.exe");
+    	//System.setProperty("webdriver.chrome.driver","C:\\chromedriver\\chromedriver.exe");
+    	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
         options.addArguments("--remote-allow-origins=*");
